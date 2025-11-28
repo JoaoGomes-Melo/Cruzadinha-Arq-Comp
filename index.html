@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=8, initial-scale=1.0">
+    <title>Cruzadinha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="perguntas">
+            <div class="pergunta">
+                <span class="texto">1. Memória usada pela CPU para operações rápidas</span>
+                <div class="linha-resposta">
+                    <input type="text" id="cpu" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(cpu,1)">validar</button>
+                </div>
+            </div>
+            <div class="pergunta">
+                <span class="texto">2.Qual componente da CPU é responsável por buscar instruções na memória, diferente
+                    da ULA que realiza operações lógicas e aritméticas</span>
+                <div class="linha-resposta">
+                    <input type="text" id="unidade" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(unidade,2)">validar</button>
+                </div>
+            </div>
+            <div class="pergunta">
+                <span class="texto">3. Como são chamados os pequenos espaços de armazenamento dentro da CPU usados para
+                    guardar dados temporários durante o processamento?</span>
+                <div class="linha-resposta">
+                    <input type="text" id="registradores" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(registradores,3)">validar</button>
+                </div>
+            </div>
+            <div class="pergunta">
+                <span class="texto">4.Qual barramento é responsável por transportar dados entre a RAM e a CPU?</span>
+                <div class="linha-resposta">
+                    <input type="text" id="barramento" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(barramento,4)">validar</button>
+                </div>
+            </div>
+            <div class="pergunta">
+                <span class="texto">5. Qual componente armazena temporariamente as instruções que serão executadas pela
+                    CPU enquanto o DMA realiza transferências em paralelo?</span>
+                <div class="linha-resposta">
+                    <input type="text" id="cache" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(cache,1)">validar</button>
+                </div>
+            </div>
+            <div class="pergunta">
+                <span class="texto">6. Qual tipo de memória costuma utilizar o sinal de Chip Select para habilitar ou
+                    desabilitar seu acesso durante operações no barramento?
+                </span>
+                <div class="linha-resposta">
+                    <input type="text" id="flash" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(flash,1)">validar</button>
+                </div>
+            </div>
+            <div class="pergunta">
+                <span class="texto">7. Qual barramento trabalha junto com o Data Bus para indicar de qual endereço os
+                    dados devem ser lidos ou escritos?</span>
+                <div class="linha-resposta">
+                    <input type="text" id="bus" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(bus,1)">validar</button>
+                </div>
+            </div>
+            <div class="pergunta">
+                <span class="texto">8. Qual componente determina o desempenho real de um processador, mesmo quando
+                    modelos como i5 ou i7 possuem diferentes velocidades internas?</span>
+                <div class="linha-resposta">
+                    <input type="text" id="clock" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(clock,1)">validar</button>
+                </div>
+            </div>
+            <div class="pergunta">
+                <span class="texto">9. Qual componente do computador distribui tarefas entre os núcleos de um
+                    processador Quad-Core para otimizar o desempenho?
+                </span>
+                <div class="linha-resposta">
+                    <input type="text" id="sistema" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(sistema,1)">validar</button>
+                </div>
+            </div>
+
+
+        </div>
+        <table class="jogo">
+        
+        </table>
+    </div>
+
+</body>
+
+</html>
