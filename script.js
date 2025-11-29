@@ -1,28 +1,41 @@
 var respostas = [
     "",
     "cpu",
-    "unidade de controle",
+    "ula",
     "registradores",
-    "barramento de dados",
-    "cache",
-    "memoria flash",
-    "addres bus",
-    "clock",
-    "sistema operacional"
+    "eprom",
+    "ram",
+    "rom", 
+    "flash",
+    "memoria de massa",
+    "dma",
+    "chip select",
+    "address bus",
+    "data bus", 
+    "threads",
+    "nucleo"
+
 ];
 
 
 var classes = [
     "",
     "cpu",
-    "unidade",
+    "ula",
     "registradores",
-    "barramento",
-    "cache",
+    "eprom",
+    "ram",
+    "rom",
     "flash",
+    "massa",
+    "dma",
+    "chip",
     "bus",
-    "clock",
-    "sistema"
+    "data",
+    "threads",
+    "nucleo"
+
+
 ];
 
 function validar(campo, numeroPergunta) {
@@ -30,11 +43,8 @@ function validar(campo, numeroPergunta) {
     var respostaCerta = respostas[numeroPergunta];
 
     if (respostaUsuario == respostaCerta) {
-        pontos += 20
         mostrarLetras(classes[numeroPergunta]);
     } else {
-        erros = pontos -= 10
-        qtdErros++
         alert("Resposta errada!");
     }
 }

@@ -13,82 +13,852 @@
     <div class="container">
         <div class="perguntas">
             <div class="pergunta">
-                <span class="texto">1. Memória usada pela CPU para operações rápidas</span>
+                <span class="texto">1. Qual é o hardware responsável por interpretar e executar todas as instruções
+                    enviadas pelo sistema operacional e pelos programas?</span>
                 <div class="linha-resposta">
                     <input type="text" id="cpu" class="ipt" placeholder="resposta">
                     <button class="btnValidar" onclick="validar(cpu,1)">validar</button>
                 </div>
             </div>
             <div class="pergunta">
-                <span class="texto">2.Qual componente da CPU é responsável por buscar instruções na memória, diferente
-                    da ULA que realiza operações lógicas e aritméticas</span>
+                <span class="texto">2.Qual é o circuito interno do processador responsável por realizar operações
+                    aritméticas e lógicas, como somas, subtrações e comparações?</span>
                 <div class="linha-resposta">
-                    <input type="text" id="unidade" class="ipt" placeholder="resposta">
-                    <button class="btnValidar" onclick="validar(unidade,2)">validar</button>
+                    <input type="text" id="ula" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(ula,2)">validar</button>
                 </div>
             </div>
             <div class="pergunta">
-                <span class="texto">3. Como são chamados os pequenos espaços de armazenamento dentro da CPU usados para
-                    guardar dados temporários durante o processamento?</span>
+                <span class="texto">3. Qual é o conjunto de pequenas unidades de armazenamento dentro do processador
+                    usado para guardar dados temporários e instruções durante o processamento?</span>
                 <div class="linha-resposta">
                     <input type="text" id="registradores" class="ipt" placeholder="resposta">
                     <button class="btnValidar" onclick="validar(registradores,3)">validar</button>
                 </div>
             </div>
             <div class="pergunta">
-                <span class="texto">4.Qual barramento é responsável por transportar dados entre a RAM e a CPU?</span>
+                <span class="texto">4.Qual é o tipo de memória que pode ser apagada pela exposição à luz ultravioleta e
+                    reprogramada posteriormente?</span>
                 <div class="linha-resposta">
-                    <input type="text" id="barramento" class="ipt" placeholder="resposta">
-                    <button class="btnValidar" onclick="validar(barramento,4)">validar</button>
+                    <input type="text" id="eprom" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(eprom,4)">validar</button>
                 </div>
             </div>
             <div class="pergunta">
-                <span class="texto">5. Qual componente armazena temporariamente as instruções que serão executadas pela
-                    CPU enquanto o DMA realiza transferências em paralelo?</span>
+                <span class="texto">5. Qual é o tipo de memória volátil do computador usada para armazenar dados
+                    temporários enquanto programas estão em execução?</span>
                 <div class="linha-resposta">
-                    <input type="text" id="cache" class="ipt" placeholder="resposta">
-                    <button class="btnValidar" onclick="validar(cache,1)">validar</button>
+                    <input type="text" id="ram" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(ram,5)">validar</button>
                 </div>
             </div>
             <div class="pergunta">
-                <span class="texto">6. Qual tipo de memória costuma utilizar o sinal de Chip Select para habilitar ou
-                    desabilitar seu acesso durante operações no barramento?
+                <span class="texto">6. Qual é o tipo de memória somente para leitura, que armazena instruções essenciais
+                    para a inicialização do computador?
                 </span>
+                <div class="linha-resposta">
+                    <input type="text" id="rom" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(rom,6)">validar</button>
+                </div>
+            </div>
+            <div class="pergunta">
+                <span class="texto">7. Qual é o tipo de memória não volátil usada em pendrives, SSDs e cartões de
+                    memória por permitir regravações rápidas?</span>
                 <div class="linha-resposta">
                     <input type="text" id="flash" class="ipt" placeholder="resposta">
-                    <button class="btnValidar" onclick="validar(flash,1)">validar</button>
+                    <button class="btnValidar" onclick="validar(flash,7)">validar</button>
                 </div>
             </div>
             <div class="pergunta">
-                <span class="texto">7. Qual barramento trabalha junto com o Data Bus para indicar de qual endereço os
-                    dados devem ser lidos ou escritos?</span>
+                <span class="texto">8. Como é chamada a categoria de dispositivos que armazenam grande quantidade de
+                    dados de forma permanente, como HDs e SSDs?</span>
                 <div class="linha-resposta">
-                    <input type="text" id="bus" class="ipt" placeholder="resposta">
-                    <button class="btnValidar" onclick="validar(bus,1)">validar</button>
+                    <input type="text" id="massa" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(massa,8)">validar</button>
                 </div>
             </div>
             <div class="pergunta">
-                <span class="texto">8. Qual componente determina o desempenho real de um processador, mesmo quando
-                    modelos como i5 ou i7 possuem diferentes velocidades internas?</span>
-                <div class="linha-resposta">
-                    <input type="text" id="clock" class="ipt" placeholder="resposta">
-                    <button class="btnValidar" onclick="validar(clock,1)">validar</button>
-                </div>
-            </div>
-            <div class="pergunta">
-                <span class="texto">9. Qual componente do computador distribui tarefas entre os núcleos de um
-                    processador Quad-Core para otimizar o desempenho?
+                <span class="texto">9. Qual é o recurso do computador que permite que dispositivos de hardware
+                    transfiram dados diretamente para a memória, sem precisar usar continuamente a CPU durante o
+                    processo?
                 </span>
                 <div class="linha-resposta">
-                    <input type="text" id="sistema" class="ipt" placeholder="resposta">
-                    <button class="btnValidar" onclick="validar(sistema,1)">validar</button>
+                    <input type="text" id="dma" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(dma,9)">validar</button>
                 </div>
             </div>
+            <div class="pergunta">
+                <span class="texto">10. Qual é o sinal utilizado em circuitos digitais para habilitar um chip específico
+                    entre vários conectados ao mesmo barramento, permitindo que ele seja acessado?
+                </span>
+                <div class="linha-resposta">
+                    <input type="text" id="chip" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(chip,10)">validar</button>
+                </div>
+            </div>
+            <div class="pergunta">
+                <span class="texto">11. Qual é o conjunto de linhas do processador responsável por indicar o endereço de
+                    memória onde os dados serão lidos ou gravados?
+                </span>
+                <div class="linha-resposta">
+                    <input type="text" id="bus" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(bus,11)">validar</button>
+                </div>
+            </div>
+            <div class="pergunta">
+                <span class="texto">12. Qual é o conjunto de linhas responsável por transportar os dados que estão sendo
+                    lidos ou escritos entre a CPU e a memória?
+                </span>
+                <div class="linha-resposta">
+                    <input type="text" id="data" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(data,12)">validar</button>
+                </div>
+            </div>
+            <div class="pergunta">
+                <span class="texto">13. Qual característica presente tanto nos processadores i5 quanto i7, responsável
+                    por permitir que cada núcleo execute múltiplas tarefas simultaneamente?
+                </span>
+                <div class="linha-resposta">
+                    <input type="text" id="threads" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(threads,13)">validar</button>
+                </div>
+            </div>
+
+            <div class="pergunta">
+                <span class="texto">14. O que diferencia processadores como Dual Core e Quad Core?
+                </span>
+                <div class="linha-resposta">
+                    <input type="text" id="nucleo" class="ipt" placeholder="resposta">
+                    <button class="btnValidar" onclick="validar(nucleo,14)">validar</button>
+                </div>
+            </div>
+
 
 
         </div>
         <table class="jogo">
-        
+            <tr>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+
+
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="numeracao">
+                        <div class="numero">11.</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="numeracao">
+                        <div class="numero">8.</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra massa">M</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra massa">E</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra massa">M</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra massa">O</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra massa">R</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra massa">I</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra massa">A</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="nulo1">--</div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra massa">D</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra massa">E</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="nulo1">--</div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra massa">M</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra massa">A</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra massa">S</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra massa">S</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra massa bus">A</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="numeracao">
+                        <div class="numero">2.</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra bus">D</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra ula">U</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="numeracao">
+                        <div class="numero">9.</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra bus dma">D</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra dma">M</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra dma">A</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="numeracao">
+                        <div class="numero">4.</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra ula">L</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra bus">R</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="numeracao">
+                        <div class="numero">3.</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra registradores ">R</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra registradores eprom">E</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra registradores ">G</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra registradores ">I</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra registradores ">S</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra registradores ">T</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra registradores ">R</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra  registradores ula">A</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra registradores ">D</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra registradores ">O</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra registradores ">R</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra registradores bus">E</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra registradores ">S</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="numeracao">
+                        <div class="numero">7.</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="numeracao">
+                        <div class="numero">10.</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra  chip ">C</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra chip ">H</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra  chip ">I</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra eprom chip ">P</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="nulo1">-</div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra  chip ">S</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra  chip ">E</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra  chip ">L</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra  chip ">E</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra  chip ">C</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra  chip ">T</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra  chip ">S</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra  flash ">F</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="numeracao">
+                        <div class="numero">1.</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="numeracao">
+                        <div class="numero">6.</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra  eprom rom ">R</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra rom ">O</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra rom ">M</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="numeracao">
+                        <div class="numero">5.</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra bus ">S</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra flash ">L</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="numeracao">
+                        <div class="numero">14.</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra nucleo ">N</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra  eprom nucleo ">U</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra  eprom nucleo cpu ">C</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra  eprom ronucleom ">L</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra  eprom nucleo ">E</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra  eprom nucleo rom ">O</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+
+                <td>
+                    <div class="resposta">
+                        <div class="letra ram ">R</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="nulo1">-</div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra flash">A</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra cpu">P</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra eprom">M</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="vazio"></div>
+                </td>
+                <td>
+                    <div class="resposta">
+                        <div class="letra ram">A</div>
+                    </div>
+                </td>
+            </tr>
+
         </table>
     </div>
 
